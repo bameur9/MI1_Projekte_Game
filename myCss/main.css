@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: Sarpanch, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( 90deg, #FFA8A8 10%, #FCFF00 100%);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    top: 0;
+    width: 100%;
+    height:60px;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(43, 62, 80, 0.7);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li a {
+   font-family: Sarpanch, sans-serif;
+   font-size: medium;
+   background-image: linear-gradient( 90deg, #FFA8A8 10%, #FCFF00 100%);
+   background-clip: content-box;
+   color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   text-decoration: none;
+   padding: 14px;
+   float: left;
+}
+
+li :hover {
+   background-image: url(../images/backgrundLogo.png);
+   font-size: 16px;
+   box-shadow: 0 0 15px  #fff;
+   background-clip: content-box;
+   color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    max-height: 100%;
+}
+
+
+.titel, .titel1 {
+    width: 1000px;
+    font-size: 1.8em; 
+    text-align: center;
+}
+
+.titel1 {
+    color:#141738;
+    border-bottom: 20px solid  transparent;
+    border-image: url(../images/backgrundLogo.png) 50;
+}
+
+.titel {
+    background-color:#141738;
+}
+
+.titel h1, h4 {
+   background-image: linear-gradient( 90deg, #FFA8A8 5%, #FCFF00 100%);
+   color: transparent;
+   background-clip: content-box;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.titel h4 {
+    font-size: 0.5em; 
+     margin-top: -33px;
+}
+
+.content1, .content2 {
+    width: 1000px;
+    padding: 10px;
+}
+
+.content1 p, h2 {
+    text-align: center;
+    color:#141738;
+}
+th, td {
+    padding: 7px;
+    text-align: right;
+    font-size: 1.4em;
+}
+h2 {
+    font-size: 2em; 
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
+.anschrift {
+    text-align: right;
+}
+.underline{
+    text-decoration: underline;
+}
+.center {
+    text-align: center;
+}
+p {
+    font-size: 1.4em;
+}
+
+.row {
+    max-width: 100%; 
+}
+.textStart {
+    margin: 30px;
+}
+img {
+    width: 300%;
+}
+
+.primary, .secondary {
+    float:left; 
+    width:10%; 
+    height: auto; 
+    padding:12px;
+}
+.mittel {
+    float:left; 
+     width:80%;
+}
+
+.first, .second, .third,.primary,.mittel,.secondary, .row {
+    background-color: rgba(35, 34, 25, 0.3);
+}
+
+.first {
+    max-width: 600px;
+}
+img.medium {
+    width: 250px;
+    height: 250px;
+}
+
+img.align-left  {
+    float: right;
+    margin-left: 10px;
+}
+.first, .second, .third {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.second {
+    width: 335px; 
+}
+
+.third {
+    margin: 10px;
+    width: 335px;
+    padding: 0;
+}
+
+.third {
+    float:right;
+}
+.plakat {
+    width: 335px;
+}
+.layout1, .layout2, .layout3 {
+    background-color: rgba(35, 34, 25, 0.3);
+} 
+.anschrift {
+    background: none;
+    margin: auto;
+}
+
+.download {
+    color: rgb(229, 255, 0);
+    text-align: center;
+    text-decoration: none;
+}
+a img {
+    height: 180px;
+}
+
+.link  {
+    width: 50%;
+}
+
+a :hover {
+    background-image: url(../images/backgrundLogo.png);
+    box-shadow: 0 0 15px  rgb(0, 0, 0);
+    color: transparent;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background: url(../images/backgrundLogo.png);
+    text-align: center;
+    position: -webkit-sticky;
+    position: fixed;
+  }
+
+  footer p {
+    background-image: linear-gradient( 90deg, #FFA8A8 10%, #FCFF00 100%);
+    color: transparent;
+    margin: 0;
+    background-clip: content-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    li :hover {
+        background-image: linear-gradient( 90deg, #FCFF00   50%, #FFA8A8 10%);
+        box-shadow: 0 0 15px  #fff;
+        color: transparent;
+         background-clip: content-box;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+        text-decoration: none;
+     }
+
+     li a {
+        font-size: small;
+     }
+     
+     .titel h1 {
+        font-size: 1.2em;
+     }
+     .titel h4 {
+        font-size: 0.03em; 
+     }
+
+     .primary, .secondary {
+        float:left; 
+        width:20%; 
+        height: auto; 
+        padding:12px;
+    }
+
+    .mittel {
+         width:60%;
+    }
+
+    img.medium {
+        width: 150px;
+        height: 150px;
+    }
+}

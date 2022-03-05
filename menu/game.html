@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rise Of The Pandemic</title>
+    <link rel="stylesheet" href="../myCss/main.css">
+    <link rel="stylesheet" href="../myCss/logo.css">
+    <link rel="stylesheet" href="../myCss/game.css">
+</head>
+
+<body>
+    <header>
+        <div id="header" class="navbar">
+            <ul>
+                <li><a href="../index.html">Startseite</a> </li>
+                <li><a href="game.html">Spielen</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li> <a href="ueberUns.html">Über uns</a></li>
+            </ul>
+        </div>
+        <div class="background">
+            <span id="textlogo">rise of the pandemic</span>
+        </div>
+    </header>
+    <div id="row">
+        <div>
+            <div class="primary"></div>
+            <div>
+                <canvas class="content" id="my_canvas" width="700" height="500"></canvas>
+            </div>
+            <div class="secondary">
+                <p>&#10031; Punkt &#10031; <br /> <span id="my_score"></span></p>
+                <p>&#10084; Life &#10084;</p>
+                <div>
+                    <canvas id="my_masken" class="life" height="45"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="currentYear"></p>
+    </footer>
+    
+    <script src="../myScript/myGame.js"></script>
+    <script src="../myScript/footerCopyright.js"></script>
+</body>
+
+</html>

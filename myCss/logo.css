@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Sarpanch:900');
+
+.background { 
+    padding: 30px;
+    letter-spacing: 2px; 
+    height: auto;
+    overflow: hidden; 
+    margin-top: -10px;
+    text-align: center;
+    background: url(../images/backgrundLogo.png);
+}
+
+#textlogo { 
+    font-weight: 900;
+    font-family: 'Sarpanch', sans-serif;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-size: 4.5em; 
+ 
+    background-image:linear-gradient(90deg,#f8df02,#fe9b62, #fd2368);
+    background-clip: content-box;
+    color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    text-decoration: none;
+
+   -webkit-animation: textlogo  2s ease-in-out infinite alternate;
+   -moz-animation: textlogo  2s ease-in-out infinite alternate;
+   animation: textlogo  2s ease-in-out infinite alternate;
+}
+
+@keyframes textlogo  {
+    to {
+      text-shadow: 0 0 1px #f8df02, 0 0 2px #fe9b62, 0 0 3px #ee3b73, 0 0 10px #e60073, 0 0 8px #fe9b62, 0 0 12px #f8df02, 0 0 16px #e60073;
+    }
+}
+
+@media (max-width: 600px) {
+    .background {
+      width: 100%;
+      height: auto;
+      padding: 0;
+      padding-top: 40px;
+      margin-top: -70px;
+    }
+    #textlogo {
+        font-size: 3em; 
+    }
+}
+
+@media (max-width: 300px){
+    .background {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        padding-top: 90px;
+        margin-top: -70px;
+      }
+    #textlogo {
+        font-size: 2.5em; 
+    }
+    body {
+        overflow: hidden;
+       
+    }
+}
+
+
+
+
